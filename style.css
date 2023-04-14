@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Space+Mono&display=swap");
 
 /* CSS Reset */
-html {
-	font-size: 16px;
-	line-height: 1.5;
-}
-
 *,
 *:before,
 *:after {
@@ -45,12 +40,26 @@ ul {
 	--font-decorative: "Changa", sans-serif;
 }
 
-/* STYLING */
+/* debug */
+/* 
+* {
+	outline: 1px solid red;
+} */
 
+/* STYLING */
 html {
+	font-size: 20px;
+	line-height: 1.5;
 	font-family: var(--font-default);
 	background: var(--dark);
 	color: var(--light);
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 16px;
+	}
 }
 
 h1,
@@ -76,6 +85,13 @@ a:focus {
 	border: 2px dotted var(--secondary);
 }
 
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 nav {
 	text-align: right;
 	padding: 1rem;
@@ -97,12 +113,13 @@ footer {
 
 .intro {
 	text-align: center;
-	/*  Temporary footer and header */
-	min-height: calc(100vh - 128px);
+	/*  Temporary footer */
+	min-height: calc(100vh - 70px);
+	height: 100%;
 }
 
 .intro--inner {
-	max-width: 640px;
+	max-width: 740px;
 	padding: 1rem;
 	position: relative;
 }
@@ -161,7 +178,7 @@ footer {
 }
 
 .bg-decor--dots {
-	width: 100%;
+	width: 200%;
 	height: 100%;
 	background-image: url(assets/dots.svg);
 	background-repeat: repeat-x;
