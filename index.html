@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,6 +19,20 @@
 	<body>
 		<header>
 			<nav>
+				<button id="toggle-theme" class="theme-switch">
+					<svg
+						width="40"
+						height="40"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"
+						></path>
+					</svg>
+				</button>
+
 				<!-- TODO I don't like when email is like this on the top, I should introduce contact section -->
 				<a class="btn btn--primary" href="mailto:mail@weronika.dev">Contact</a>
 			</nav>
@@ -140,12 +154,13 @@
 		</main>
 
 		<footer>
-			Built with
+			Designed and built with
 			<span role="img" aria-label="love"> ❤️ </span>
 			by
 			<a href="https://weronika.dev" target="_blank" rel="noopener noreferrer">
 				weronika.dev
 			</a>
 		</footer>
+		<script src="./index.js"></script>
 	</body>
 </html>
