@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Space+Mono&display=swap");
+
+/* CSS Reset */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+/* VARIABLES */
+
+:root {
+	/* colors */
+	--dark: #00070b;
+	--primary: #cb48b7;
+	--secondary: #ffba49;
+	--light: #ececfe;
+
+	/* fonts */
+	--font-default: "Space Mono", monospace;
+	--font-decorative: "Changa", sans-serif;
+}
+
+/* STYLING */
+
+html {
+	font-family: var(--font-default);
+	background: var(--dark);
+	color: var(--light);
+}
+
+h1,
+h2 {
+	font-family: var(--font-decorative);
+	font-size: 3rem;
+	line-height: 4rem;
+}
+
+a {
+	color: var(--primary);
+}
+
+nav {
+	text-align: right;
+	padding: 1rem;
+}
+
+main {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1440px;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+}
+
+/* SECTIONS */
+
+.intro {
+	text-align: center;
+	/*  Temporary footer and header */
+	min-height: calc(100vh - 112px);
+}
+
+.intro--inner {
+	max-width: 640px;
+	padding: 1rem;
+}
+
+/* UTIL CLASSES */
+.decorative--secondary {
+	color: var(--secondary);
+}
+
+.decorative--primary {
+	color: var(--primary);
+}
+
+.flex {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.gap {
+	gap: 0.5rem;
+}
+
+/* FANCY TOUCH */
+
+::selection {
+	background-color: var(--secondary);
+	color: var(--dark);
+}
