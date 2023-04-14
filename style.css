@@ -63,10 +63,6 @@ html {
 	}
 }
 
-main {
-	overflow-x: hidden;
-}
-
 h1,
 h2 {
 	font-family: var(--font-decorative);
@@ -274,8 +270,8 @@ footer {
 	background-position: 0% 50%;
 	opacity: 0.6;
 	position: absolute;
-	top: 0;
-	right: 60%;
+	top: 5%;
+	right: 80%;
 }
 
 .bg-decor--sphere {
@@ -284,6 +280,12 @@ footer {
 	background-repeat: no-repeat;
 	position: absolute;
 	opacity: 0.4;
+}
+
+@media screen and (max-width: 640px) {
+	.bg-decor--sphere {
+		display: none;
+	}
 }
 
 .bg-decor--sphere-l {
