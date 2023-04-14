@@ -239,7 +239,14 @@ footer {
 	border-radius: 4px;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: all 0.2s ease-in;
+	/* transition: all 0.2s ease-in; */
+}
+
+/* TODO: this is temporary fix */
+@media screen and (max-width: 640px) {
+	.btn {
+		display: none;
+	}
 }
 
 .btn--primary {
